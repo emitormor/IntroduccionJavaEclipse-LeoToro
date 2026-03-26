@@ -19,7 +19,7 @@ public class Ejercicio001 {
     //COMPLETAR METODO
     public double division(double d, double e) {
     	if (e == 0) {
-    		throw new ArithmeticException("No se puede dividir entre cero");
+    		throw new ArithmeticException("No se puede dividir entre cero.");
     	}
         return d / e;
     }
