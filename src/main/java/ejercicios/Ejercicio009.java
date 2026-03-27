@@ -4,7 +4,13 @@ public class Ejercicio009 {
 	
 	//COMPLETAR METODO
 	public double obtenerMayor(double a, double b, double c) {
-		return 0.0;
+		if (a >= b && a >= c) {
+			return a;
+		} else if (b >= a && b >= c) {
+			return b;
+		} else {
+			return c;
+		}
     }
 
     public static void main(String[] args) {

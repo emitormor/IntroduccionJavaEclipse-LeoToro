@@ -4,11 +4,15 @@ public class Ejercicio008 {
 	
 	//COMPLETAR METODO
 	public boolean esBisiesto(int año) {
-        return false;
+        return (año % 4 == 0 && año % 100 != 0) || (año % 400 == 0);
     }
 	//COMPLETAR METODO
     public String describirAño(int año) {
-        return "";
+        if (esBisiesto(año)) {
+        	return año + " ES bisiesto";
+        } else {
+        	return año + " NO es bisiesto";
+        }
     }
 
     public static void main(String[] args) {

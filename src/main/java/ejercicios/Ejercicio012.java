@@ -6,8 +6,18 @@ public class Ejercicio012 {
 	
 	//COMPLETAR METODO
 	public int sumarHastaCero() {
-		return 0;
-    }
+		Scanner scanner = new Scanner(System.in);
+		int suma = 0;
+		int numero;
+		
+		do {
+			numero = scanner.nextInt();
+			suma += numero;
+		} while (numero != 0);
+		
+		return suma;
+	}
+	
 	
 
     public static void main(String[] args) {

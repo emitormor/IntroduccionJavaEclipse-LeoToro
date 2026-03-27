@@ -6,12 +6,27 @@ public class Ejercicio023 {
 	
 	//COMPLETAR METODO
 	public void contarVocales() {
-        
+	    Scanner scanner = new Scanner(System.in);
+	    System.out.print("Introduce una frase: ");
+	    String frase = scanner.nextLine();
+	    int vocales = contarVocalesEnFrase(frase);
+	    System.out.println("La frase tiene " + vocales + " vocales.");
+	    scanner.close();
     }
 	//COMPLETAR METODO
     private int contarVocalesEnFrase(String frase) {
-
-        return 0;
+        if (frase == null) {
+            return 0;
+        }
+        int contador = 0;
+        String fraseMinusculas = frase.toLowerCase();
+        for (int i = 0; i < fraseMinusculas.length(); i++) {
+            char c = fraseMinusculas.charAt(i);
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                contador++;
+            }
+        }
+        return contador;
     }
     
 

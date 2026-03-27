@@ -4,7 +4,20 @@ public class Ejercicio021 {
 	
 	//COMPLETAR METODO
 	public int contarVocales(String texto) {
-        return 0;
+        if (texto == null) {
+        	return 0;
+        }
+        
+        int contador = 0;
+        String textoMinusculas = texto.toLowerCase();
+        
+        for (int i = 0; i < textoMinusculas.length(); i++) {
+        	char c = textoMinusculas.charAt(i);
+        	if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+        		contador++;
+        	}
+        }
+        return contador;
     }
 
     public static void main(String[] args) {

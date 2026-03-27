@@ -3,7 +3,7 @@ package ejercicios;
 public class Ejercicio003 {
 	//COMPLETAR METODO
 	public double celsiusAFahrenheit(double celsius) {
-		return 0.0;
+		return celsius * 1.8 + 32;
     }
 
     public static void main(String[] args) {

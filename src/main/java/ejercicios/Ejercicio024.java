@@ -14,9 +14,22 @@ public class Ejercicio024 {
             notas[i] = scanner.nextInt();
         }
         
-        /*COMPLETAR
-         * CODIGO AQUI
-         */
+        int suma = 0;
+        int mayor = notas[0];
+        int menor = notas[0];
+
+        for (int i = 0; i < notas.length; i++) {
+            suma += notas[i];
+            if (notas[i] > mayor) mayor = notas[i];
+            if (notas[i] < menor) menor = notas[i];
+        }
+
+        double media = (double) suma / notas.length;
+
+        System.out.println("=== RESULTADOS ===");
+        System.out.println("Media: " + media);
+        System.out.println("Nota más alta: " + mayor);
+        System.out.println("Nota más baja: " + menor);
         
         scanner.close();
     }

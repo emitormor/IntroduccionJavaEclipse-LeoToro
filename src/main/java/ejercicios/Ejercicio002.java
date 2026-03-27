@@ -6,7 +6,7 @@ public class Ejercicio002 {
 	
 	//COMPLETAR METODO
 	public static String generarSaludo(String nombre, int edad) {
-		return "";
+		return "Hola " + nombre + ", tienes " + edad + " años.";
     }
 	
 	public static void main(String[] args) {
